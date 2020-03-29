@@ -1,5 +1,9 @@
 import React from 'react';
-import { Link, Route, Router, browserHistory } from 'react-router'
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from "react-router-dom";
 import Register from './Register/Register';
 import './App.css';
 
@@ -8,14 +12,13 @@ const App = () => {
     <div className="App">
       <div className="App-header">
         <h1>Formulário</h1>
-        <Link to="/register">Formulário de registros</Link>
       </div>
-
-      <Router history={browserHistory}>
-        <Route path="/register"> 
-          <Register />
-        </Route>
-      </Router>
+      <div>
+        <Router>
+          <Link to="/register" >Registros</Link>
+          <Route path="/register" component={Register} />
+        </Router>
+      </div>
     </div>
   );
 }

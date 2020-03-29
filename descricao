@@ -1,0 +1,26 @@
+
+Criar um repositorio 
+Criar uma aplicacao React com CRA
+Criar uma rota pra esse desafio
+Criar um componente para essa rota
+Neste componente, criar um formulário Formik, que tenha:
+
+-----------------------------------------
+
+
+Um select com options de CPF, 
+montados a partir de um mock q tenha uma lista de 
+CPF vinculado com o nome da pessoa
+
+O formulario tem q ter uma campo de nome q preenche automaticamente com a seleção 
+do CPF
+
+Também tem q ter no mínimo outros 3 campos, endereço, telefone, email
+
+Se estiver no capricho, colocar mascara em cada um deles
+
+Utilizar o Yup para validar todos os campos
+
+A validação só acontece no submit do formulário, indicando quais estão errados
+
+Se sucesso no submit, fazer um console.log de um objeto com todos os campos.
